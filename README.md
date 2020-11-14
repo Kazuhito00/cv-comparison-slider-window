@@ -11,7 +11,14 @@
 python sample.py
 ```
 
+# How to use
+以下の流れで呼び出してください。
+CvComparisonSliderWindowクラス作成時には、ウィンドウ名、スライダー上のライン色、ライン太さを指定出来ます。<br>
+省略した場合は、それぞれ'debug'、(255, 255, 255)、1になります。
+
 ```python
+from cv_comparison_slider_window import CvComparisonSliderWindow
+
 cvwindow = CvComparisonSliderWindow(
     window_name='debug',
     line_color=(255, 255, 255),
@@ -19,9 +26,10 @@ cvwindow = CvComparisonSliderWindow(
 )
 
 # [省略]
-    
-cvwindow.imshow(original_frame, frame)
-key = cv.waitKey(1)
+
+while True:
+    cvwindow.imshow(image1, image2)
+    key = cv.waitKey(1)
 ```
 
 # Author
