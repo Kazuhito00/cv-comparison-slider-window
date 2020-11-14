@@ -24,10 +24,11 @@ cvwindow = CvComparisonSliderWindow(
     line_color=(255, 255, 255),
     line_thickness=1,
 )
-
 # [省略]
 
 while True:
+    # [省略]
+
     cvwindow.imshow(image1, image2)
     key = cv.waitKey(1)
 ```
