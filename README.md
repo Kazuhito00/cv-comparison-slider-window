@@ -10,6 +10,20 @@
 ```bash
 python sample.py
 ```
+
+```python
+cvwindow = CvComparisonSliderWindow(
+    window_name='debug',
+    line_color=(255, 255, 255),
+    line_thickness=1,
+)
+
+# [省略]
+    
+cvwindow.imshow(original_frame, frame)
+key = cv.waitKey(1)
+```
+
 # Author
 高橋かずひと(https://twitter.com/KzhtTkhs)
  
