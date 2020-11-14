@@ -1,1 +1,0 @@
-from cvstacksliderwindow.cvstacksliderwindow import CvStackSliderWindow

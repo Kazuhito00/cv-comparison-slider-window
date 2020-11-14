@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 
 
-class CvStackSliderWindow(object):
+class CvComparisonSliderWindow(object):
     def __init__(self,
                  window_name='debug',
                  line_color=(255, 255, 255),

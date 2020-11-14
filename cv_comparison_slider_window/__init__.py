@@ -1,0 +1,1 @@
+from cv_comparison_slider_window.cv_comparison_slider_window import CvComparisonSliderWindow

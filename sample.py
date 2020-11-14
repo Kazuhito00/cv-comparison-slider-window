@@ -2,11 +2,11 @@ import copy
 import numpy as np
 import cv2 as cv
 
-from cvstacksliderwindow import CvStackSliderWindow
+from cv_comparison_slider_window import CvComparisonSliderWindow
 
 
 def main():
-    cvwindow = CvStackSliderWindow(
+    cvwindow = CvComparisonSliderWindow(
         window_name='debug',
         line_color=(255, 255, 255),
         line_thickness=1,
