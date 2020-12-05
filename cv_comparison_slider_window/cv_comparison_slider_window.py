@@ -20,6 +20,11 @@ class CvComparisonSliderWindow(object):
             self.click_point = [x, y]
 
     def imshow(self, image1, image2):
+        image1_width, image1_height = image1.shape[1], image1.shape[0]
+        image2_width, image2_height = image2.shape[1], image2.shape[0]
+        if ((image1_width != image2_width) or (image1_height != image2_height)):
+            image2 = cv.resize(image2, (image1_width, image1_height))
+
         image_height = image1.shape[0]
 
         crop_image1 = image1[:, 0:self.click_point[0]]
